@@ -25,7 +25,7 @@ article{
 	display: flex;
 	justify-content: space-between;
 	width: 990px;		
-	border: 1px solid #000;
+	
 }
 .logo{
 	display: flex; 
@@ -121,8 +121,7 @@ nav a:hover{
 	margin-bottom: 20px;
 }
 .banner_options a{
-	display: inline-block;
-	border: 1px solid #fff;
+	display: inline-block;	
 	padding: 5px;
 	color: #fff;
 	font-size: 13px;
@@ -130,8 +129,7 @@ nav a:hover{
 }
 .openHours{
 	display: flex;
-	justify-content: space-between;
-	border-bottom: 1px solid #0079c7;
+	justify-content: space-between;	
 	padding-bottom: 10px;
 	padding-top: 10px;
 	color: #fff;
@@ -143,12 +141,10 @@ nav a:hover{
 	height: 300px;
 }
 #geral section{
-	flex: 2;
-	border: 1px solid red;
+	flex: 2;	
 }
 #geral aside{
-	flex: 1;
-	border: 1px solid blue;
+	flex: 1;	
 }
 .widget_title{
 	padding-top: 20px;
@@ -199,4 +195,82 @@ article .news_resume{
 	font-size: 14px;
 	line-height: 20px;
 	margin-bottom: 30px;
+}
+.menuMobile{
+	display: none;
+	width: 40px;
+	height: 40px;	
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 20px;
+}
+.mm_line{
+	height: 3px;
+	background-color: #39aee1;
+	border:1px solid #39aee1;
+	border-radius: 5px;
+
+}
+/* responsivo*/
+@media (max-width:600px){
+	#banner{
+		height: auto;
+	}
+	.banner_headline{
+		padding:20px;
+		height: auto;
+	}
+	.banner_headline h1{
+		font-size:50px;
+	}
+	.banner_headline h2{
+		font-size:17px;
+	}
+	.banner_options{
+		height:auto;
+		flex-direction:column;
+		padding-top:100px;
+	}
+	.container{
+		flex-direction:column;
+	}
+	#geral section,
+	#geral aside{
+		padding:20px;
+	}
+	header .container{
+		flex-direction:row;
+	}
+	nav ul{
+		flex-direction:column;
+		display:none;
+		position: absolute;
+		right: 0px;
+		width: 100px;
+		background-color: #fff;
+		border-radius: 10px;
+		margin-top: -30px;
+	}
+	header{
+		height:60px;
+	}
+	.logo{
+		padding-left:20px;
+	}
+	.menuMobile{
+		display:flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.banner1, 
+	.banner2, 
+	.banner3{
+		padding: 10px;
+	}
+	.banner_desc{
+		margin: 5px;
+	}
+	.openHours{
+		padding: 5px;
+	}
 }
